@@ -5,7 +5,14 @@ package electronic.agenda.ant.desktop.java.gui;
  * @author Brayan Esteves
  */
 public class Main extends javax.swing.JFrame {
-
+    
+    private String documentIdentifications[] = new String[10];
+    private String names[]                   = new String[10];
+    private String lastnames[]               = new String[10];
+    private String address[]                 = new String[10];
+    private String phones[]                  = new String[10];
+    private String dateOfBirth[]             = new String[10];
+    
     public Main() {
         initComponents();
     }
@@ -156,6 +163,11 @@ public class Main extends javax.swing.JFrame {
         });
 
         buttonSave.setText("Save");
+        buttonSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSaveActionPerformed(evt);
+            }
+        });
 
         buttonNext.setText(">>");
         buttonNext.addActionListener(new java.awt.event.ActionListener() {
@@ -254,6 +266,10 @@ public class Main extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_buttonLastActionPerformed
+
+    private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonSaveActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonLast;
