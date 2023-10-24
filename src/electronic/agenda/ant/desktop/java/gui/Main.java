@@ -149,6 +149,11 @@ public class Main extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         buttonLast.setText("<<");
+        buttonLast.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonLastActionPerformed(evt);
+            }
+        });
 
         buttonSave.setText("Save");
 
@@ -237,6 +242,18 @@ public class Main extends javax.swing.JFrame {
         }               
         
     }//GEN-LAST:event_buttonNextActionPerformed
+
+    private void buttonLastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonLastActionPerformed
+        
+        String index    = this.textfieldIndex.getText();
+        int    indexAux = Integer.parseInt(index);
+        if(indexAux > 0) {
+               indexAux = indexAux - 1;               
+               index    = String.valueOf(indexAux);               
+            this.textfieldIndex.setText(index);
+        }
+        
+    }//GEN-LAST:event_buttonLastActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonLast;
