@@ -239,7 +239,7 @@
                           <EmptySpace min="-2" pref="363" max="-2" attributes="0"/>
                           <Component id="labelIndex" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="textfieldIndex" min="-2" max="-2" attributes="0"/>
+                          <Component id="textfieldIndex" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -280,6 +280,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="&gt;&gt;"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonNextActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="labelIndex">
           <Properties>

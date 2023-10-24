@@ -153,6 +153,11 @@ public class Main extends javax.swing.JFrame {
         buttonSave.setText("Save");
 
         buttonNext.setText(">>");
+        buttonNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonNextActionPerformed(evt);
+            }
+        });
 
         labelIndex.setText("Index");
 
@@ -177,7 +182,7 @@ public class Main extends javax.swing.JFrame {
                         .addGap(363, 363, 363)
                         .addComponent(labelIndex)
                         .addGap(18, 18, 18)
-                        .addComponent(textfieldIndex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(textfieldIndex, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -220,6 +225,18 @@ public class Main extends javax.swing.JFrame {
     private void textfieldAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textfieldAddressActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textfieldAddressActionPerformed
+
+    private void buttonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNextActionPerformed
+       
+        String index    = this.textfieldIndex.getText();
+        int    indexAux = Integer.parseInt(index);
+        if(indexAux < 9) {
+               indexAux = indexAux + 1;               
+               index    = String.valueOf(indexAux);               
+            this.textfieldIndex.setText(index);
+        }               
+        
+    }//GEN-LAST:event_buttonNextActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonLast;
