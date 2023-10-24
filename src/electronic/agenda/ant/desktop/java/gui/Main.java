@@ -127,10 +127,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(separatorBottom, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(panelForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelContentLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(panelContentLayout.createSequentialGroup()
+                .addGap(334, 334, 334)
                 .addComponent(labelTitle)
-                .addGap(343, 343, 343))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelContentLayout.setVerticalGroup(
             panelContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,6 +156,7 @@ public class Main extends javax.swing.JFrame {
 
         labelIndex.setText("Index");
 
+        textfieldIndex.setEditable(false);
         textfieldIndex.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         textfieldIndex.setText("0");
 
