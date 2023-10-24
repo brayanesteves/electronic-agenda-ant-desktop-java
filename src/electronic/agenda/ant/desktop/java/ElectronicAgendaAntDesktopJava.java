@@ -1,6 +1,8 @@
 
 package electronic.agenda.ant.desktop.java;
 
+import electronic.agenda.ant.desktop.java.gui.Main;
+
 /**
  * @author Brayan Esteves
  * Challenge:
@@ -65,6 +67,10 @@ public class ElectronicAgendaAntDesktopJava {
 
     
     public static void main(String[] args) {
+        
+        Main main = new Main();
+        main.setVisible(true);
+        main.setLocationRelativeTo(null);
         
     }
     
