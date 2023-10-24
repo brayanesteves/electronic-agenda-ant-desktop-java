@@ -251,6 +251,14 @@ public class Main extends javax.swing.JFrame {
                indexAux = indexAux + 1;               
                index    = String.valueOf(indexAux);               
             this.textfieldIndex.setText(index);
+            
+            this.textfieldDocumentIdentification.setText(this.documentIdentifications[indexAux]);
+            this.textfieldName.setText(this.names[indexAux]);
+            this.textfieldLastname.setText(this.lastnames[indexAux]);
+            this.textfieldAddress.setText(this.address[indexAux]);
+            this.textfieldPhone.setText(this.phones[indexAux]);
+            this.textfieldDateOfBirth.setText(this.dateOfBirth[indexAux]);
+            
         }               
         
     }//GEN-LAST:event_buttonNextActionPerformed
@@ -263,12 +271,30 @@ public class Main extends javax.swing.JFrame {
                indexAux = indexAux - 1;               
                index    = String.valueOf(indexAux);               
             this.textfieldIndex.setText(index);
+            
+            this.textfieldDocumentIdentification.setText(this.documentIdentifications[indexAux]);
+            this.textfieldName.setText(this.names[indexAux]);
+            this.textfieldLastname.setText(this.lastnames[indexAux]);
+            this.textfieldAddress.setText(this.address[indexAux]);
+            this.textfieldPhone.setText(this.phones[indexAux]);
+            this.textfieldDateOfBirth.setText(this.dateOfBirth[indexAux]);
+            
         }
         
     }//GEN-LAST:event_buttonLastActionPerformed
 
     private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
-        // TODO add your handling code here:
+        
+        String index    = this.textfieldIndex.getText();
+        int    indexAux = Integer.parseInt(index);
+        
+        this.documentIdentifications[indexAux] = this.textfieldDocumentIdentification.getText();
+        this.names[indexAux]                   = this.textfieldName.getText();
+        this.lastnames[indexAux]               = this.textfieldLastname.getText();
+        this.address[indexAux]                 = this.textfieldAddress.getText();
+        this.phones[indexAux]                  = this.textfieldPhone.getText();
+        this.dateOfBirth[indexAux]             = this.textfieldDateOfBirth.getText();
+        
     }//GEN-LAST:event_buttonSaveActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
